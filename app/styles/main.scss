@@ -1,6 +1,11 @@
 // bower:scss
 // endbower
 
+@font-face {
+    font-family: 'league'; /*a name to be used later*/
+    src: url('../LeagueGothic-Regular.otf'); /*URL to font*/
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
@@ -20,6 +25,7 @@ body {
 header {
     position: fixed;
     top: 0;
+    left: 45%;
     height: 60px;
     z-index: 9999;
 
@@ -28,10 +34,12 @@ header {
     }
 
     & nav {
-        display: inline-block;
+        position: fixed;
+        top: 30%;
+        right: 0;
 
         & li {
-            display: inline-block;
+            
         }
     }
 }
@@ -41,6 +49,7 @@ header {
     padding-top: 60px;
     height: 100vh;
     background-color: lightblue;
+    font-family: 'league';
 }
 
 .main-inner {
@@ -50,7 +59,7 @@ header {
 
 //////////////////////////////// Second section
 .second-break {
-    height: 100px;
+    height: 50px;
     width: 100%;
 }
 
@@ -73,7 +82,7 @@ header {
 
 //////////////////////////////// Third section
 .third-break {
-    height: 100px;
+    height: 50px;
     width: 100%;
 }
 

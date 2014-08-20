@@ -2,9 +2,15 @@
 
 ////////////////////////////////////////////////// Way points
 $('.second').waypoint(function() {
-  console.log('second callback triggered.');
-}, { offset: 200 });
+  $('.box-two').addClass('box-two-move');
+  console.log('second div.');
+}, { offset: '80%' });
+
+$('.second').waypoint(function() {
+  $('.box-two').removeClass('box-two-move');
+  console.log('second div.');
+}, { offset: '20%' });
 
 $('.third').waypoint(function() {
   console.log('third div.');
-}, { offset: 200 });
+}, { offset: '90%' });

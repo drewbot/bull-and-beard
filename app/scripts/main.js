@@ -9,7 +9,7 @@ $('.second').waypoint(function(direction) {
 	} else {
 		$('.box-two').removeClass('box-two-move');
 	}
-}, { offset: '80%' });
+}, { offset: '50%' });
 
 $('.second').waypoint(function(direction) {
 	if (direction === 'down') {
@@ -27,7 +27,7 @@ $('.third').waypoint(function(direction) {
 	} else {
 		$('.box-three').removeClass('box-two-move');
 	}
-}, { offset: '70%' });
+}, { offset: '50%' });
 
 $('.third').waypoint(function(direction) {
 	if (direction === 'down') {

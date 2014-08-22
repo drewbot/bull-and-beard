@@ -6,6 +6,21 @@
     src: url('../LeagueGothic-Regular.otf'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'league-italic'; /*a name to be used later*/
+    src: url('../LeagueGothic-Italic.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'league-condensed'; /*a name to be used later*/
+    src: url('../LeagueGothic-CondensedRegular.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'league-condensed-italic'; /*a name to be used later*/
+    src: url('../LeagueGothic-CondensedItalic.otf'); /*URL to font*/
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
@@ -16,8 +31,25 @@
 
 body {
     background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+    font: normal 14px/30px Georgia, "Times New Roman", Times, serif;
+    color: #191918;
+    padding: 0 20px 0 20px;
+}
+
+h1 {
+    font-family: 'league', Helvetica, Arial, sans-serif;
+    font-size: 7em;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    line-height: 1em;
+}
+
+h2 {
+    font-family: 'league', Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    font-family: 'league', Helvetica, Arial, sans-serif;
 }
 
 //////////////////////////////// Nav
@@ -29,8 +61,19 @@ header {
     height: 60px;
     z-index: 9999;
 
-    & img {
-        display: inline-block;
+    & .logo {
+        margin-top: -60px;
+        font-size: 3em;
+        -webkit-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1); /* older webkit */
+        -webkit-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); 
+           -moz-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); 
+             -o-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); 
+                transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); /* custom */
+    }
+
+    // logo transition
+    & .logo-bounce {
+        -webkit-transform: translateY(70px);
     }
 
     & nav {
@@ -44,17 +87,49 @@ header {
     }
 }
 
+
+
 //////////////////////////////// Main section
 .main {
     padding-top: 60px;
     height: 100vh;
-    background-color: lightblue;
-    font-family: 'league';
 }
 
 .main-inner {
     width: 100%;
     max-width: 1060px;
+}
+
+.main-copy {
+    width: 60%;
+    float: left;
+
+    & .main-copy-headline {
+        margin-left: -50px;
+        -webkit-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1); /* older webkit */
+        -webkit-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); 
+           -moz-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); 
+             -o-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); 
+                transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); /* custom */
+    } 
+
+    & .main-copy-paragraph {
+        margin-top: 50px;
+        -webkit-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1); /* older webkit */
+        -webkit-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); 
+           -moz-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); 
+             -o-transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); 
+                transition: all 500ms cubic-bezier(0.135, 0.620, 0.535, 1.425); /* custom */
+    } 
+}
+
+.main-copy-headline-bounce {
+    -webkit-transform: translateX(50px);
+}
+
+
+.main-copy-paragraph-bounce {
+    -webkit-transform: translateY(-50px);
 }
 
 //////////////////////////////// Second section

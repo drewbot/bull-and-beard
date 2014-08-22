@@ -1,4 +1,19 @@
 
+$( document ).ready(function() {
+    $('.main-copy-headline').addClass('main-copy-headline-bounce');
+    $('.main-copy-paragraph').addClass('main-copy-paragraph-bounce');
+    $('.logo').addClass('logo-bounce');
+});
+
+$('.home-button').click(function(){
+	$('.main-copy-headline').addClass('main-copy-headline-bounce');
+    $('.main-copy-paragraph').addClass('main-copy-paragraph-bounce');
+    $('.logo').addClass('logo-bounce');
+    console.log('click worked')
+})
+
+
+
 
 ////////////////////////////////////////////////// Way points
 
@@ -6,8 +21,12 @@
 $('.second').waypoint(function(direction) {
 	if (direction === 'down') {
 		$('.box-two').addClass('box-two-move');
+		$('.main-copy-headline').removeClass('main-copy-headline-bounce');
+    	$('.main-copy-paragraph').removeClass('main-copy-paragraph-bounce');
 	} else {
 		$('.box-two').removeClass('box-two-move');
+		$('.main-copy-headline').addClass('main-copy-headline-bounce');
+    	$('.main-copy-paragraph').addClass('main-copy-paragraph-bounce');
 	}
 }, { offset: '50%' });
 

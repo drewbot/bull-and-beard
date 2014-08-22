@@ -33,7 +33,6 @@ body {
     background: #fafafa;
     font: normal 14px/30px Georgia, "Times New Roman", Times, serif;
     color: #191918;
-    padding: 0 20px 0 20px;
 }
 
 h1 {
@@ -189,13 +188,23 @@ header {
 //////////////////////////////////////// Footer
 
 footer {
-    height: 60px;
+    height: 200px;
     width: 100%;
-    max-width: 1060px;
+    background-color: #191918;
+    color: white;
 
-    & li {
-        display: inline-block;
-    } 
+    & .footer-container {
+        width: 100%;
+        max-width: 1060px;
+
+        & button {
+
+        }
+
+        & li {
+            display: inline-block;
+        } 
+    }
 }
 
 

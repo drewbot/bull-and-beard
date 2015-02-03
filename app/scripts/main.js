@@ -1,10 +1,12 @@
 
+// When document loads run main section animations
 $( document ).ready(function() {
     $('.main-copy-headline').addClass('main-copy-headline-bounce');
     $('.main-copy-paragraph').addClass('main-copy-paragraph-bounce');
     $('.logo').addClass('logo-bounce');
 });
 
+// Home button
 $('.home-button').click(function(){
 	$('.main-copy-headline').addClass('main-copy-headline-bounce');
     $('.main-copy-paragraph').addClass('main-copy-paragraph-bounce');

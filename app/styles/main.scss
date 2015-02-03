@@ -1,6 +1,7 @@
 // bower:scss
 // endbower
 
+/////////////////////////////////////// Fonts
 @font-face {
     font-family: 'league'; /*a name to be used later*/
     src: url('../LeagueGothic-Regular.otf'); /*URL to font*/
@@ -21,6 +22,7 @@
     src: url('../LeagueGothic-CondensedItalic.otf'); /*URL to font*/
 }
 
+//////////////////////////////////// Standard styles
 *, *:before, *:after {
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
@@ -37,10 +39,9 @@ body {
 
 h1 {
     font-family: 'league', Helvetica, Arial, sans-serif;
-    font-size: 7em;
     font-weight: normal;
     letter-spacing: 0.01em;
-    line-height: 1em;
+    line-height: 1.05em;
 }
 
 h2 {
@@ -72,7 +73,13 @@ header {
 
     // logo transition
     & .logo-bounce {
-        -webkit-transform: translateY(70px);
+        -webkit-transform: translateY(75px);
+    }
+
+    & .circle {
+        height: 30px;
+        width: 30px;
+        border-radius: 
     }
 
     & nav {
@@ -122,16 +129,17 @@ header {
     } 
 }
 
+// JS triggered styles
 .main-copy-headline-bounce {
     -webkit-transform: translateX(50px);
 }
-
 
 .main-copy-paragraph-bounce {
     -webkit-transform: translateY(-50px);
 }
 
 //////////////////////////////// Second section
+// Break allows space for waypoint method to occur
 .second-break {
     height: 50px;
     width: 100%;
@@ -148,13 +156,11 @@ header {
     position: absolute;
     top: 40px;
     left: 60px;
-    height: 100px;
-    width: 100px;
-    background-color: coral;
     transition: all .5s ease-in-out;
 }
 
 //////////////////////////////// Third section
+// Break allows space for waypoint method to occur
 .third-break {
     height: 50px;
     width: 100%;
@@ -171,9 +177,6 @@ header {
     position: absolute;
     top: 40px;
     left: 60px;
-    height: 100px;
-    width: 100px;
-    background-color: coral;
     transition: all .5s ease-in-out;
 }
 
